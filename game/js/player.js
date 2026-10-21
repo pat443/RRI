@@ -1,4 +1,9 @@
-import { PLAYER_COLOR, PLAYER_SIZE, PLAYER_SPEED } from "./config.js";
+import {
+	PLAYER_COLOR,
+	PLAYER_SIZE,
+	PLAYER_SPEED,
+	SPRINT_MULTIPLIER,
+} from "./config.js";
 import { world } from "./world.js";
 
 // --- Igralec ---------------------------------------------------------------
@@ -35,8 +40,10 @@ export function updatePlayer(dt) {
 		dy /= length;
 	}
 
-	player.x += dx * player.speed * dt;
-	player.y += dy * player.speed * dt;
+	const speedMultiplier = keys.shift ? SPRINT_MULTIPLIER : 1;
+	const speed = player.speed * speedMultiplier;
+	player.x += dx * speed * dt;
+	player.y += dy * speed * dt;
 	// Omejitev na platno (clamp).
 	player.x = Math.max(0, Math.min(world.W - player.w, player.x));
 	player.y = Math.max(0, Math.min(world.H - player.h, player.y));

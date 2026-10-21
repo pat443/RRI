@@ -40,7 +40,7 @@ Tedni 2–8 nadgrajujejo **tvojo kopijo** te mape, ne predmetni `starter/` na Gi
 
 ## Naloga tedna 1
 
-1. Zaženi igro in preveri WASD.
+1. Zaženi igro in preveri WASD ter sprint s tipko Shift.
 2. Oglej si module v `js/` in preveri premikanje igralca.
 3. Izpolni osnutek GDD: `../docs/GDD-predloga.md` (Zombie Survival ali Dungeon Escape).
 4. (Opcijsko) spremeni barvo ali hitrost igralca — in v enem stavku razloži, *kaj* si spremenil.

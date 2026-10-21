@@ -13,7 +13,7 @@
 
 ## 2. Kratek opis
 
-Igralec vodi modrega lika po igralnem polju s tipkami WASD. Trenutna različica je osnova za premikanje in še nima sovražnikov, točk ali pogoja za zmago.
+Igralec vodi modrega lika po igralnem polju s tipkami WASD, s tipko Shift pa začasno pospeši. Trenutna različica še nima sovražnikov, točk ali pogoja za zmago.
 
 ## 3. Tema
 
@@ -25,12 +25,12 @@ Igralec vodi modrega lika po igralnem polju s tipkami WASD. Trenutna različica 
 
 | Mehanika | Vhod | Pravilo | Povratna informacija |
 |----------|------|---------|----------------------|
-| Premikanje | WASD | Lik se premika v štiri smeri; diagonalno gibanje je normalizirano. Lik ostane znotraj platna. | Lik se premika po platnu. |
+| Premikanje in sprint | WASD, Shift | WASD premika lik v štiri smeri; diagonalno gibanje je normalizirano. Shift uporabi množilnik hitrosti 1,6. Lik ostane znotraj platna. | Lik se premika po platnu. |
 
 ## 5. Igralec
 
 - Velikost: 32 × 32 pikslov; začetni položaj je na sredini platna.
-- Hitrost: 220 pikslov na sekundo.
+- Hitrost: 220 pikslov na sekundo; med držanjem Shift se pomnoži z 1,6.
 - Zdravje in orožje: še nista določena ali implementirana.
 - Omejitev: igralec ne more zapustiti platna velikosti 800 × 450 pikslov.
 
@@ -50,7 +50,7 @@ Igra ima trenutno samo igralno stanje: na platnu je prikazan lik, ki ga igralec 
 ## 9. Uporabniški vmesnik
 
 - Med igro: temno platno in moder lik.
-- Navodilo na strani: premikanje s tipkami WASD.
+- Navodilo na strani: premikanje s tipkami WASD in sprint s tipko Shift.
 - Meni, rezultat in zaslon za konec igre še niso implementirani.
 
 ## 10. Asseti
