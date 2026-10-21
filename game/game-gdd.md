@@ -59,7 +59,7 @@ Zunanji asseti niso uporabljeni. Platno, ozadje in lik so narisani s HTML Canvas
 
 ## 11. Tehnični okvir
 
-- Datoteke: `index.html`, `style.css`, `game.js`.
+- Datoteke: `index.html`, `style.css` in moduli v `js/` (`config.js`, `world.js`, `input.js`, `player.js`, `render.js`, `game.js`).
 - Uporabljena sta HTML Canvas in osnovni JavaScript; zunanje knjižnice niso vključene.
 - Znana omejitev: gre za začetni prototip z eno igralno mehaniko.
 
